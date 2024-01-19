@@ -8,9 +8,11 @@ const { mongoDbUri } = require("./config/db.config");
 const authRoutes = require('./routes/auth.routes');
 const userRoutes = require('./routes/user.routes');
 const ticketRoutes = require('./routes/ticket.routes');
-cors.use({
+
+
+app.use(cors({
     origin: "*"
-})
+}))
 // app.use(function (req, res, next) {
 //     res.setHeader("Access-Control-Allow-Origin", "*");
 //     res.setHeader("Access-Control-Allow-Credentials", "true");
