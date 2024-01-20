@@ -11,7 +11,8 @@ const ticketRoutes = require('./routes/ticket.routes');
 
 
 app.use(cors({
-    origin: "https://vishnucrm.netlify.app"
+    origin: "https://vishnucrm.netlify.app",
+    methods: ["GET","HEAD","PUT","PATCH","POST","DELETE"]
 }))
 // app.use(function (req, res, next) {
 //     res.setHeader("Access-Control-Allow-Origin", "*");
